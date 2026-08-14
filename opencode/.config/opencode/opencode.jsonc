@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "lsp": true,
+  "permission": {
+    "read": {
+      "*.env": "deny",
+    },
+    "edit": "ask",
+    "bash": 
+      {
+        "*": "ask",
+        "ls": "allow",
+        "git status": "allow",
+        "git log": "allow",
+        "git commit": "ask",
+        "git push": "ask",
+        "git merge": "ask"
+      },
+  },
+  "plugin": ["@mohak34/opencode-notifier@latest"]
+}
